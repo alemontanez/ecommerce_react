@@ -1,17 +1,19 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar/>
-      <header className="App-header">
-        <div>
+    return (
+        <div className="App">
+            <NavBar/>
+            <ItemListContainer/>
+            <header className="App-header">
+                <div>
+                </div>
+            </header>
         </div>
-      </header>
-    </div>
-  );
+    );
 }
 
 export default App;
