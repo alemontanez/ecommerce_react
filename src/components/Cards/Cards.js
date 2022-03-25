@@ -1,4 +1,6 @@
 import './Cards.css'
+import '../ItemCount/ItemCount'
+import ItemCount from '../ItemCount/ItemCount'
 
 export default function Cards(props){
 
@@ -8,7 +10,7 @@ export default function Cards(props){
             <p>Precio: ${props.precio}</p>
             <p>Marca: {props.marca}</p>
             <p>Descripción: {props.descripcion}</p>
-            <button>Comprar</button>
+            <ItemCount stock="5" initial="1"/>
         </div>
     )
 } 
